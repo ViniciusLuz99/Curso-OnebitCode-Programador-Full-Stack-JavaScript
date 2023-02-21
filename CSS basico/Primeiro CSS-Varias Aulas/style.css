@@ -1,0 +1,25 @@
+li {
+  color: purple;
+}
+
+h1 {
+  font-size: 3em;
+  color: green;
+  background-color: black;
+  border: 2px solid green;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWr1BHCqTlp6wR_jlvtNIFnz9JtSCZagWNeA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+#red {
+  background-color: red;
+}
