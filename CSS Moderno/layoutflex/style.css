@@ -11,16 +11,30 @@
   gap: 0px 15px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+ 
+  /* flex-wrap: wrap; */
 }
 
 .item {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 70px;
   border: solid 1px black;
   background-color: white;
   font-size: 20px;
   display: flex;
+
   justify-content: center;
   align-items: center;
+ 
+
 }
+
+.item1{
+
+}
+
+.item2{
+  /* flex: 1 0 200px; */
+}
+
+.item3{}
