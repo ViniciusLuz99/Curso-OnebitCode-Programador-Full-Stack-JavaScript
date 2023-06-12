@@ -1,29 +1,30 @@
-const converter = prompt("Qual numero vocé quer converter?");
-const converterMedida = prompt(
-  "para qual medida quer converter este valor?[mm] [cm] [dm] [dam] [hm] [km]"
+const measurement = prompt("Insira uma medida em metros?");
+const unit = prompt(
+  "para qual medida quer converter este valor?" +
+    "\n[mm] [cm] [dm] [dam] [hm] [km]"
 );
 
-const convertedNum = parseFloat(converter);
+const convertedNum = parseFloat(measurement);
 
-switch (converterMedida) {
+switch (unit) {
   case "mm":
-    alert(convertedNum + "mm");
+    alert("resultado " + convertedNum + "m = " + convertedNum * 1000 + "mm");
     break;
   case "cm":
-    alert(convertedNum + "cm");
+    alert("resultado " + convertedNum + "m = " + convertedNum * 100 + "cm");
     break;
   case "dm":
-    alert(convertedNum + "dm");
+    alert("resultado " + convertedNum + "m = " + convertedNum * 10 + "dm");
     break;
   case "dam":
-    alert(convertedNum + "dam");
+    alert("resultado " + convertedNum + "m = " + convertedNum / 10 + "dam");
     break;
   case "hm":
-    alert(convertedNum + "hm");
+    alert("resultado " + convertedNum + "m = " + convertedNum / 100 + "hm");
     break;
   case "km":
-    alert(convertedNum + "km");
+    alert("resultado " + convertedNum + "m = " + convertedNum / 1000 + "km");
     break;
   default:
-    alert("Invalido")
+    alert("Invalido");
 }
