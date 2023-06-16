@@ -25,9 +25,7 @@ do {
       break;
     case "2":
       // Se o valor for "2", solicita ao usuário a quantidade de dinheiro a ser removida e a subtrai da variável 'money'
-      money -= parseFloat(
-        prompt("Qual quantidade de dinheiro quer remover?")
-      );
+      money -= parseFloat(prompt("Qual quantidade de dinheiro quer remover?"));
       break;
     case "3":
       // Se o valor for "3", exibe um alerta informando o encerramento
