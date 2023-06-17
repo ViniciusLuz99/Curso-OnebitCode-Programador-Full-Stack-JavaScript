@@ -1,17 +1,22 @@
 // Solicita ao usuário um número para ser multiplicado
-let numero = parseFloat(prompt("Digite um número para ser multiplicado:"));
-// Inicializa a variável 'resultado' como zero
-let resultado = 0;
-// Inicializa a variável 'indice' como zero
-let indice = 0;
+const numero = parseFloat(prompt("Digite um número para ser multiplicado:"));
 
-// Loop 'for' que realiza a multiplicação do número pelo índice
-// e exibe o resultado em cada iteração
+// Inicializa a variável 'resultado' como uma string vazia
+let resultado = "";
+
+// Inicializa a variável 'fator' como 1
+let fator = 1;
+
+// Loop 'for' que realiza a multiplicação do número pelo fator
+// e concatena o resultado em uma string
 // A estrutura do loop é: inicialização; condição; finalização
 for (
   alert("Inicializando a multiplicação...."); // Inicialização, exibe uma mensagem de inicialização
-  indice <= 20; // Condição, o loop continuará enquanto o 'índice' for menor ou igual a 20
-  indice++, resultado = numero * indice // Finalização, incrementa o 'índice' e calcula o 'resultado'
+  fator <= 20; // Condição, o loop continuará enquanto o 'fator' for menor ou igual a 20
+  fator++ // Finalização, incrementa o 'fator'
 ) {
-  alert(numero + " X " + indice + " = " + resultado); // Exibe o resultado da multiplicação
+  resultado += " -> " + numero + " x " + fator + " = " + (numero * fator) + "\n";
 }
+
+// Exibe o resultado da multiplicação em forma de tabuada
+alert("Resultado da tabuada de " + numero + ":\n" + resultado);
