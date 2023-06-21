@@ -9,7 +9,31 @@ Consultar paciente, Que retira o primeiro da lista e mostra na tela o paciente c
 3-Opção de Sair, caso contrario deve retornar ao Menu
 */
 
-const filaVirtual = [
-  ""
-]
+let menu = "";
 
+let filaVirtual = ["João", "Maria", "Pedro", "Ana", "Carlos", "Laura", "Lucas"];
+
+do {
+  let pacientes = "";
+
+  menu = prompt(
+    "Bem Vindo!" +
+      "\nPacientes na fila:" +
+      filaVirtual +
+      "\nEscolha uma opção" +
+      "\n1 - Novo paciente" +
+      "\n2 - Consultar paciente" +
+      "\n3 - Sair"
+  );
+  switch (menu) {
+    case "1":
+      const novoPaciente = prompt("Insira o nome do paciente:");
+      filaVirtual.push(novoPaciente);
+      break;
+      
+      case "2":
+      const pacienteConsultado = ()
+      pacienteConsultado = filaVirtual.shift()
+      alert("Consultando" + pacienteConsultado)
+  }
+} while (menu !== "3");

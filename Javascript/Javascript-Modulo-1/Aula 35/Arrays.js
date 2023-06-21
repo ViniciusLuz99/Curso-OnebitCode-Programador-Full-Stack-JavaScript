@@ -33,6 +33,11 @@ const ultimoElemento = arr.pop(); // remove e armazena o último elemento do arr
 console.log(arr);
 console.log(ultimoElemento); // exibe o último elemento removido no console na variavel que foi armazenada
 
+// shift: Remove um elemento no começo do array e devolve o elemento removido
+elementoRemovido = arr.shift("Boromir");
+console.log(arr);
+console.log(elementoRemovido);
+
 /*
 Pesquisar por um Elemento
 */
@@ -53,5 +58,23 @@ Cortar e Concatenar
 const hobbits = arr.slice(0, 4); // extrai os elementos de índice 0 a 3 (Frodo, Sam, Merry, Pippin) em um novo array "hobbits"
 const outros = arr.slice(-4); // extrai os últimos 4 elementos do array em um novo array "outros"
 console.log(arr);
+console.log(hobbits);
+console.log(outros);
+
+// concat: Junta dois ou mais arrays e/ou itens e devolve o resultado (sem alterar nenhum dos arrays)
+var sociedade = hobbits.concat(outros, "Boromir");
+console.log(sociedade);
+console.log(hobbits);
+console.log(outros);
+
+// concat: Junta dois ou mais arrays e/ou itens e devolve o resultado (sem alterar nenhum dos arrays)
+var sociedade = hobbits.concat(outros, "Boromir");
+console.log(sociedade);
+console.log(hobbits);
+console.log(outros);
+
+// concat: Junta dois ou mais arrays e/ou itens e devolve o resultado (sem alterar nenhum dos arrays)
+var sociedade = hobbits.concat(outros, "Boromir");
+console.log(sociedade);
 console.log(hobbits);
 console.log(outros);
