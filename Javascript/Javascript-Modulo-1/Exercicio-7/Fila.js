@@ -12,14 +12,20 @@ Consultar paciente, Que retira o primeiro da lista e mostra na tela o paciente c
 let menu = "";
 
 let filaVirtual = ["João", "Maria", "Pedro", "Ana", "Carlos", "Laura", "Lucas"];
+let pacienteConsultado = "Em espera...";
 
 do {
   let pacientes = "";
+  for (let i = 0; i <= filaVirtual.length; i++) {
+    pacientes += i + 1 + "º - " + filaVirtual[i] + "\n";
+  }
 
   menu = prompt(
     "Bem Vindo!" +
-      "\nPacientes na fila:" +
-      filaVirtual +
+      "\n Em consulta: " +
+      pacienteConsultado +
+      "\nPacientes na fila:\n" +
+      pacientes +
       "\nEscolha uma opção" +
       "\n1 - Novo paciente" +
       "\n2 - Consultar paciente" +
@@ -30,10 +36,14 @@ do {
       const novoPaciente = prompt("Insira o nome do paciente:");
       filaVirtual.push(novoPaciente);
       break;
-      
-      case "2":
-      const pacienteConsultado = ()
-      pacienteConsultado = filaVirtual.shift()
-      alert("Consultando" + pacienteConsultado)
+    case "2":
+      pacienteConsultado = filaVirtual.shift();
+      alert("Consultando " + pacienteConsultado);
+      break;
+    case "3":
+      alert("Finalizando...");
+      break;
+    default:
+      alert("Comando não encontrado!");
   }
 } while (menu !== "3");
