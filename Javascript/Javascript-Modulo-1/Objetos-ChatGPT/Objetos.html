@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos</title>
+    <style>
+      html {
+        background-color: #111;
+        color: #f7f7f7;
+        font-family: sans-serif;
+      }
+      h1 {
+        width: 90%;
+        background-color: #222;
+        padding: 8px;
+      }
+      p {
+        max-width: 90%;
+        padding: 5px;
+        background-color: #333;
+        font-size: 1.1em;
+      }
+      code {
+        padding: 10px;
+        background-color: #000;
+        color: green;
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Objetos</h1>
+    <p>
+      No JavaScript, um objeto é como um recipiente que contém diferentes
+      informações relacionadas a uma coisa específica. Imagine que você tenha
+      uma caixa de brinquedos. Cada brinquedo na caixa possui características
+      diferentes, como cor, tamanho e forma. No JavaScript, você pode pensar em
+      cada brinquedo como um objeto e as características do brinquedo como
+      propriedades desse objeto.
+    </p>
+
+    <p>
+      Vamos pegar o exemplo de uma pessoa. Uma pessoa pode ter propriedades como
+      nome, idade e gênero. Para representar essa pessoa como um objeto em
+      JavaScript, você pode criar uma variável e atribuir a ela um valor de
+      objeto. Aqui está um exemplo:
+    </p>
+
+    <code>
+      var pessoa = { nome: "João", idade: 25, genero: "masculino" };
+    </code>
+    <p>
+      Nesse exemplo, criamos um objeto chamado pessoa com três propriedades:
+      nome, idade e genero. Os nomes das propriedades estão à esquerda dos dois
+      pontos (:), e seus valores estão à direita.
+    </p>
+
+    <p>
+      Você pode acessar as propriedades de um objeto usando a notação de ponto
+      ou colchetes. Veja como você pode acessar as propriedades do objeto
+      pessoa:
+    </p>
+
+    <code>
+      console.log(pessoa.nome); // Saída: "João" console.log(pessoa.idade); //
+      Saída: 25 console.log(pessoa.genero); // Saída: "masculino"
+    </code>
+    <p>
+      No JavaScript, os objetos também podem ter funções como propriedades.
+      Essas funções são chamadas de métodos. Elas permitem que objetos executem
+      ações. Veja um exemplo:
+    </p>
+
+    <code>
+      var pessoa = { nome: "João", idade: 25, genero: "masculino", dizerOla:
+      function() { console.log("Olá, meu nome é " + this.nome); } };
+    </code>
+
+    <p>
+      pessoa.dizerOla(); // Saída: "Olá, meu nome é João" Nesse exemplo, o
+      objeto pessoa possui um método chamado dizerOla que registra uma mensagem
+      no console usando o nome da pessoa.
+    </p>
+    <p>
+      Agora, para o desafio! Vamos criar um objeto representando um carro. O
+      carro deve ter propriedades como marca, modelo e ano. Ele também deve ter
+      um método chamado ligarMotor que registra uma mensagem dizendo "O carro
+      está ligando". Tente criar o objeto e chamar o método ligarMotor.
+    </p>
+    <script src="./Objetos.js"></script>
+  </body>
+</html>
