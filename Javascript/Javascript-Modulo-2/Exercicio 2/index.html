@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Devs</title>
+    <script src="./index.js" defer></script>
+    <style>
+      body {
+        background-color: #111;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      input {
+        margin: 5px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        border: none;
+        background-color: #222;
+        color: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        background-color: #333;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        background-color: #222;
+        color: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercício 12 - Cadastro de Devs</h1>
+    <hr />
+
+    <h2>Cadastrar Novo Desenvolvedor</h2>
+
+    <form id="devForm">
+      <label for="fullname">Nome Completo:</label>
+      <input type="text" name="fullname" id="fullname" /><br /><br />
+
+      <label>Tecnologias:</label><br />
+      <button id="addTechBtn" type="button">Adicionar Nova</button>
+      <ul id="stackInputs"></ul>
+      <br />
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>
