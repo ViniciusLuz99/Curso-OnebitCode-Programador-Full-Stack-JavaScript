@@ -1,0 +1,161 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+header {
+  width: 100%;
+  background-color: #222;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+fieldset h3 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+input {
+  margin: px;
+}
+
+input[type="text"] {
+  padding: 10px 3px;
+  margin: 0 auto;
+  width: 99%;
+  border: none;
+  background-color: #222;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.error {
+  outline: 1px solid rgba(255, 0, 0, 0.651);
+  animation: shake 0.3s ease-in-out;
+  -webkit-animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#message {
+  color: red;
+  text-align: center;
+}
+
+input[type="text"]:valid {
+  outline: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  background-color: #222;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+h2 {
+  border-radius: 5px;
+}
+
+#gameBoard {
+  background-color: #070707;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+}
+
+#turnPlayer {
+  text-decoration: underline;
+}
+
+#gameBoard span {
+  color: black;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+.tablecolor {
+  background-color: #222;
+  cursor: default;
+}
+
+#gameBoard span.win {
+  background-color: #25a340;
+}
+
+.win {
+  text-align: center;
+  background-color: #25a340;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ready {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.ready:hover {
+  background-color: #a3a3a3;
+  transition: background-color 0.3s ease;
+}
