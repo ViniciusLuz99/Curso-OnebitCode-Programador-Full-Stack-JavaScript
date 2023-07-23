@@ -104,7 +104,9 @@ button {
 }
 
 button:hover {
+  transition: 0.3s ease-in-out;
   background-color: #555;
+  box-shadow: 0 2px 4px #4d4d4d7e;
 }
 
 h2 {
@@ -112,38 +114,47 @@ h2 {
 }
 
 #gameBoard {
-  background-color: #070707;
+  background-color: #ff000000;
   display: grid;
   grid-template-columns: 6rem 6rem 6rem;
   grid-template-rows: 6rem 6rem 6rem;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
   max-width: 19rem;
+  transition: 0.3s ease-in-out;
 }
 
 #turnPlayer {
   text-decoration: underline;
+  transition: 0.3s ease-in-out;
 }
 
 #gameBoard span {
+  box-shadow: 0 2px 8px #0f0f0f65;
   color: black;
   display: grid;
   place-content: center;
   font-size: 5rem;
+  transition: 0.3s ease-in-out;
 }
 
 .tablecolor {
   background-color: #222;
   cursor: default;
+  transition: 0.3s ease-in-out;
 }
 
 #gameBoard span.win {
   background-color: #25a340;
+  box-shadow: 0 2px 8px #25a340c9;
+  transition: 0.3s ease-in-out;
 }
 
 .win {
   text-align: center;
   background-color: #25a340;
+  box-shadow: 0 2px 8px #25a34086;
+  transition: 0.3s ease-in-out;
 }
 
 .cursor-pointer {
@@ -152,10 +163,10 @@ h2 {
 
 .ready {
   background-color: #ddd;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 
 .ready:hover {
   background-color: #a3a3a3;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
