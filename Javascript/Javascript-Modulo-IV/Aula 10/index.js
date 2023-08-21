@@ -22,3 +22,4 @@ const user = {
 console.log(user.friends[0].phone?.ddd)
 console.log(user?.brothers?.length)
 
+console.log(user.brothers?.[5].name)
