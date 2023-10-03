@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  },
+  "name": "exercicio-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
